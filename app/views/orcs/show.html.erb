@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @orc.name %>
+</p>
+
+<p>
+  <b>Lv:</b>
+  <%= @orc.lv %>
+</p>
+
+<p>
+  <b>Weapon:</b>
+  <%= @orc.weapon %>
+</p>
+
+
+<%= link_to 'Edit', edit_orc_path(@orc) %> |
+<%= link_to 'Back', orcs_path %>

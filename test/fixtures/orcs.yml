@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  lv: 1
+  weapon: MyString
+
+two:
+  name: MyString
+  lv: 1
+  weapon: MyString

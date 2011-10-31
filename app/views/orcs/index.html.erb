@@ -1,0 +1,27 @@
+<h1>Listing orcs</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Lv</th>
+    <th>Weapon</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @orcs.each do |orc| %>
+  <tr>
+    <td><%= orc.name %></td>
+    <td><%= orc.lv %></td>
+    <td><%= orc.weapon %></td>
+    <td><%= link_to 'Show', orc %></td>
+    <td><%= link_to 'Edit', edit_orc_path(orc) %></td>
+    <td><%= link_to 'Destroy', orc, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Orc', new_orc_path %>
